@@ -113,6 +113,16 @@ public class Main {
         for (Point point : points) {
             System.out.printf("x=%f, y=%f, f=%f, d=%f\n" , point.x, point.y, chosenApproximateFunction.solve(point.x), Math.abs(chosenApproximateFunction.solve(point.x) - point.y));
         }
+        double s=0;
+        double n =0;
+        for (Point point: points){
+            s=s+Math.abs(chosenApproximateFunction.solve(point.x) - point.y);
+            n+=1;
+        }
+
+        System.out.println(s*s +" это S");
+
+        System.out.println(Math.sqrt(s/n)+" это Среднеквадратичное отклонение");
 
         XYChart chart = GraphBuilder.createFunctionGraphWithPoints(chosenApproximateFunction, points);
 

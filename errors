@@ -1,8 +1,10 @@
 Exception in thread "AWT-EventQueue-0" java.lang.IllegalArgumentException: null Stroke
 	at sun.java2d.SunGraphics2D.setStroke(SunGraphics2D.java:1155)
-	at org.knowm.xchart.internal.chartpart.Legend_Marker.doPaint(Legend_Marker.java:66)
-	at org.knowm.xchart.internal.chartpart.Legend_.paint(Legend_.java:151)
-	at org.knowm.xchart.XYChart.paint(XYChart.java:419)
+	at org.knowm.xchart.internal.chartpart.PlotContent_XY.doPaint(PlotContent_XY.java:168)
+	at org.knowm.xchart.internal.chartpart.PlotContent_.paint(PlotContent_.java:62)
+	at org.knowm.xchart.internal.chartpart.Plot_.paint(Plot_.java:38)
+	at org.knowm.xchart.internal.chartpart.Plot_AxesChart.paint(Plot_AxesChart.java:35)
+	at org.knowm.xchart.XYChart.paint(XYChart.java:417)
 	at org.knowm.xchart.XChartPanel.paintComponent(XChartPanel.java:168)
 	at javax.swing.JComponent.paint(JComponent.java:1056)
 	at javax.swing.JComponent.paintToOffscreen(JComponent.java:5210)
